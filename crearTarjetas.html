@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles3.css">
+    <title>Crear Tarjetas</title>
+</head>
+<body>
+    <header class="title">
+        <div class="logo-container">
+            <img src="images/LogoMaxPas .png" alt="Logo_encabezado">
+            <h3>MaxPas</h3>
+        </div>
+    </header>
+
+    <h1 class="title-container"> Crear Tarjetas</h1>
+    
+    <section class="flex-container">
+        <div id="controls">
+            <button id="createCardBtn" onclick="crearTarjeta()">Crear Tarjeta</button>
+            <button id="guardarTarjetaBtn" style="display: none;" onclick="guardarTarjeta()">Guardar Tarjeta</button>
+        </div>
+        
+
+        <div class="tarjeta-info">
+            <label for="numeroTarjeta">Número de Tarjeta:</label>
+            <input type="text" id="numeroTarjeta" readonly>
+            <label for="numeroChip">Número de Chip:</label>
+            <input type="text" id="numeroChip" readonly>
+        </div>
+    </section>
+
+
+    <button class="btn-lista-tarjetas" onclick="window.location.href='listaDeTarjetas.html'">Lista de Tarjetas Creadas</button>
+
+    <footer class="footer">
+        <button class="btn-volver" onclick="window.location.href='AdministracionCaja.html'">Volver</button>
+    </footer>
+
+        
+
+    <script src="js.js"></script>
+</body>
+</html>

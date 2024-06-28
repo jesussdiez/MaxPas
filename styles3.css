@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.title {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+.title-container {
+    margin-top: 2%;
+    text-align: center;
+    color: #333;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    font-size: 1.em;
+}
+
+.logo-container img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+
+}
+
+.title h1, .title h3 {
+    margin: 0;
+    text-align: center;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+}
+
+#controls {
+    margin-right: 2rem;
+}
+
+#controls button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#controls button:hover {
+    background-color: #45a049;
+}
+
+.tarjeta-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-info label {
+    margin-bottom: 0.5rem;
+}
+
+.tarjeta-info input {
+    padding: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+
+.lista-tarjetas {
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.lista-tarjetas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-tarjetas li {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.footer {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn-volver {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 5px;
+    font-family: 'Montserrat', sans-serif;
+    animation: ease-in 1s;
+    transition: 0.5s;
+}
+
+.btn-volver:hover, .btn-lista-tarjetas:hover {
+    background-color: #d32f2f;
+}
+
+.btn-lista-tarjetas {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 5px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 6%;
+}
+
+.btn-lista-tarjetas:hover {
+    background-color: #d32f2f;
+}

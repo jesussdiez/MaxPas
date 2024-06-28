@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Administración de Caja</title>
+</head>
+<body>
+    <header class="title">
+        <div class="logo-container">
+            <img src="images/LogoMaxPas .png" alt="Logo_encabezado">
+            <h3>MaxPas</h3>
+        </div>
+        <h1 class="title-container">Administración de Caja</h1>
+    </header>
+
+    <section class="controls">
+        <h2>Administrar - Tarjetas de Pago</h2>
+        <button onclick="window.location.href='crearTarjetas.html'">Crear Tarjeta</button>
+        <button onclick="window.location.href='cargarTarjeta.html'">Cargar Tarjeta</button>
+        <button onclick="window.location.href='hdTarjeta.html'">Habilitar/Deshabilitar Tarjeta</button>
+        <button onclick="window.location.href='consultarTransacciones.html'">Consultar Transacciones</button>
+        
+    </section>
+
+    <div id="caja-info">
+       
+    </div>
+
+    <button class="btn-volver" onclick="window.location.href='PortalDeCajas.html'">Volver</button>
+
+    <script src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="consultarTransacciones.css">
+    <title>Historial de Transacciones</title>
+</head>
+<body>
+    <div class="section">
+        <h1>Historial de Transacciones</h1>
+        <button class="btn-volver" onclick="window.location.href='AdministracionCaja.html'">Volver</button>
+    </div>
+    
+    <div class="filtro-container">
+        <h2>Filtro por Estado de Tarjeta</h2>
+        <label for="estadoTarjeta">Estado de la Tarjeta:</label>
+        <select id="estadoTarjeta">
+            <option value="habilitadas">Habilitadas</option>
+            <option value="deshabilitadas">Deshabilitadas</option>
+        </select>
+        <button id="consultarEstado">Consultar</button>
+        <div id="resultadoEstado"></div>
+    </div>
+
+    
+    <div class="filtro-container">
+        <h2>Filtro por Rango de Fechas</h2>
+        <label for="fechaInicio">Fecha de Inicio:</label>
+        <input type="text" id="fechaInicio" placeholder="Seleccionar fecha">
+        <label for="fechaFin">Fecha de Fin:</label>
+        <input type="text" id="fechaFin" placeholder="Seleccionar fecha">
+        <button id="consultarFechas">Consultar</button>
+        <div id="resultadoFechas"></div>
+    </div>
+
+    
+    <div class="filtro-container">
+        <h2>Consulta de Monto Promedio de Saldos Anteriores</h2>
+        <button id="consultarPromedio">Consultar Promedio</button>
+        <div id="resultadoPromedio"></div>
+    </div>
+
+    
+    <div class="filtro-container">
+        <h2>Consulta de Promedio de Cargas</h2>
+        <button id="consultarPromedioCargas">Consultar Promedio de Cargas</button>
+        <div id="resultadoPromedioCargas"></div>
+    </div>
+
+    
+    <div class="filtro-container">
+        <h2>Consulta de Monto Total de Cargas en Tarjetas Habilitadas</h2>
+        <button id="consultarMontoTotalCargas">Consultar Monto Total de Cargas Habilitadas</button>
+        <div id="resultadoMontoTotalCargas"></div>
+    </div>
+
+    
+    <div class="filtro-container">
+        <h2>Consulta de Monto Total de Cargas en Tarjetas Deshabilitadas</h2>
+        <button id="consultarMontoTotalCargasDeshabilitadas">Consultar Monto Total de Cargas Deshabilitadas</button>
+        <div id="resultadoMontoTotalCargasDeshabilitadas"></div>
+    </div>
+
+    <h2 id="historialTitulo" style="display: none;">Historial de Transacciones</h2>
+    <ul id="listaTransacciones"></ul>
+
+    <script src="datepicker.min.js"></script>
+    <script src="consultarTransacciones.js"></script>
+</body>
+</html>

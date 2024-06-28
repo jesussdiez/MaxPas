@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hdTarjeta.css">
+    <title>Habilitar/Deshabilitar Tarjeta</title>
+</head>
+<body>
+    <header class="title">
+        <div class="logo-container">
+            <img src="images/LogoMaxPas .png" alt="Logo_encabezado">
+            <h3>MaxPas</h3>
+        </div>
+    </header>
+
+    <h1 class="title-container">Habilitar/Deshabilitar Tarjeta</h1>
+
+    <section class="tarjeta-container">
+        <form id="habilitarDeshabilitarForm">
+            <div class="form-group">
+                <label for="numeroTarjeta">Número de Tarjeta</label>
+                <input type="text" id="numeroTarjeta" name="numeroTarjeta" placeholder="Ingrese el número de tarjeta">
+            </div>
+            <div class="form-group">
+                <label for="accion">Acción</label>
+                <select id="accion" name="accion">
+                    <option value="" disabled selected>Seleccione acción</option>
+                    <option value="habilitar">Habilitar</option>
+                    <option value="deshabilitar">Deshabilitar</option>
+                </select>
+            </div>
+            <div class="button-container">
+                <button type="button" id="procesarAccion">Procesar Acción</button>
+            </div>
+        </form>
+    </section>
+
+    <button class="btn-volver" onclick="window.location.href='AdministracionCaja.html'">Volver</button>
+
+    <script src="hdTarjeta.js"></script>
+</body>
+</html>
